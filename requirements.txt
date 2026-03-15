@@ -1,0 +1,8 @@
+torch 
+torchvision
+huggingface_hub
+transformers
+pandas
+fastapi
+scikit-learn
+asyncio
