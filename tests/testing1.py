@@ -5,7 +5,7 @@ async def test():
         responses = await asyncio.gather(*[
             client.post("http://localhost:8000/predict",
                         json={"text": f"this movie was great", "data_id": i})
-            for i in range(40)
+            for i in range(200)
         ])
         for r in responses:
             print(r.json())

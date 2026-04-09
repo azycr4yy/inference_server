@@ -67,7 +67,11 @@ async def lifespan(app: FastAPI):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device)
     batcher = asyncio.Queue(maxsize=100)
-    dynamic_batcher = DynamicBatcher(model, tokenizer, batcher)
+    dynamic_batcher = DynamicBatcher(
+    model=model, 
+    tokenizer=tokenizer,    
+    batcher=batcher
+    )
     task = asyncio.create_task(dynamic_batcher.run())
     
     yield
@@ -133,3 +137,4 @@ async def crash():
     EXCEPTION.labels(endpoint = "/crash", status_code = "500").inc()
     raise HTTPException(status_code=500, detail="Server crashed")
     os._exit(1)
+

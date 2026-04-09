@@ -5,3 +5,9 @@
 /ML_Inference_Server_Blueprint (1).docx
 LICENSE
 .vscode
+/server/smi.txt
+/observability/csv_files
+/observability/__pycache__
+/server/__pycache__
+/server/etsting.py
+/server/__pycache__/app.cpython-312.pyc
