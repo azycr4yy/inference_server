@@ -70,7 +70,8 @@ Failures            0             0
 - **`batch_size`**: Distribution of requests per batch.
 - **`queue_depth`**: Current queue size (saturation signal).
 
-![Grafana Dashboard Screenshot](https://raw.githubusercontent.com/grafana/grafana/main/docs/logo.svg) *(Replace with actual screenshot link)*
+![Grafana Dashboard Screenshot](<img width="1600" height="744" alt="image" src="https://github.com/user-attachments/assets/fc76da8d-68bc-45b9-b00f-87e4c29f8d52" />
+) 
 
 ---
 
